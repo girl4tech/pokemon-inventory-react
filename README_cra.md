@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # pokemon-inventory-react
 Using React to manage a Pokemon and Items inventory! 
 =======
@@ -2489,3 +2490,7 @@ In the future, we might start automatically compiling incompatible third-party m
 
 If you have ideas for more “How To” recipes that should be on this page, [let us know](https://github.com/facebookincubator/create-react-app/issues) or [contribute some!](https://github.com/facebookincubator/create-react-app/edit/master/packages/react-scripts/template/README.md)
 >>>>>>> pokemon initial commit
+=======
+# pokemon-inventory-react
+Using React to manage a Pokemon and Items inventory! 
+>>>>>>> 69143279c460b77532cff3e2db207a4c57e6d6c5

@@ -5,8 +5,14 @@ class Cart extends React.Component {
   render(){
     const {items, removeItem} = this.props;
     return(
-      <div>
-        <h2>Cart</h2>
+      <div style={{
+        border:'1px solid black'
+      }}>
+        <div style={{
+          border:'1px solid black'
+        }}>
+          <h2>Bag Inventory</h2>
+        </div>
         <ul>
           {items.map(item => {
             return(

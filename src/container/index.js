@@ -82,13 +82,20 @@ class IndexContainer extends Component {
     return (
       <div className="App">
         <div>
-          <h1>Pokemon</h1>
           <Cart removeItem={this.removeItemFromBag} items={this.state.items}/>
         </div>
-          {pokemonSection}
-        <ul>
-          {itemSection}
-        </ul>
+        <div style={{
+          color:'red'
+        }}>
+          <h1>Choose a Pokemon</h1>
+        </div>
+        <div>{pokemonSection}</div>
+        <div style={{
+          color:'blue'
+        }}>
+          <h1>Choose Items</h1>
+        </div>
+        <div>{itemSection}</div>
       </div>
     );
   }

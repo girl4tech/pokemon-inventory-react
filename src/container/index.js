@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PokemonCard from '../components/PokemonCard';
 import ItemCard from '../components/ItemCards';
 import Cart from '../components/CartComponent';
+import Button from '../components/Buttons';
 import logo from '../logo.svg';
 import '../App.css';
 
@@ -87,7 +88,7 @@ class IndexContainer extends Component {
         <div style={{
           color:'red'
         }}>
-          <h1>Choose a Pokemon</h1>
+          <h1>Choose Pokemon</h1>
         </div>
         <div>{pokemonSection}</div>
         <div style={{

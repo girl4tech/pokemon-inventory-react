@@ -31,7 +31,6 @@ class Cart extends React.Component {
                 name: item.name,
                 url: item.url
               }
-            //  state: {} Pass state from index.js email mike@hapyak.com with any questions
               }}>
               View
               </Link>

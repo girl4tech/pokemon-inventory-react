@@ -76,10 +76,10 @@ class IndexContainer extends Component {
       )
     })
     let itemSection = this.state.pokemonItems.map((item, index)=>{
-      return (
-        <ItemCard ItemName={item.name} url={item.url} addItemToBag={this.addItemToBag}/>
-      )
-    })
+          return (
+            <Button ItemName={item.name} url={item.url} addItemToBag={this.addItemToBag}/>
+          )
+        })
     return (
       <div className="App">
         <div>

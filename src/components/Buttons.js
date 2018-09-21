@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 
+
 const styles = theme => ({
   button: {
     margin: theme.spacing.unit,
@@ -13,11 +14,12 @@ const styles = theme => ({
 });
 
 function ContainedButtons(props) {
-  const { classes } = props;
+  const { ItemName, addItemToBag, classes, url } = props;
+  console.log(props)
   return (
-    // const items = 
     <div>
-      <Button variant="contained" color="secondary" className={classes.button}>
+      <Button variant="contained" color="secondary" className={classes.button}
+        onClick={()=> addItemToBag(ItemName, url)} key={props.key}>{ItemName}
       </Button>
     </div>
   );

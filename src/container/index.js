@@ -15,10 +15,11 @@ class IndexContainer extends Component {
   };
   componentDidMount(){
     console.log("pokemon");
+  //  this.fetchData('https://pokeapi.co/api/v2/evolution-chain/', 'evoChain');
     this.fetchData('https://pokeapi.co/api/v2/pokemon/', 'pokemans');
     this.fetchData('http://pokeapi.co/api/v2/item/', 'pokemonItems');
   }
-  fetchData = (url, name) =>{
+  fetchData = (url, name, cb) =>{
     (
       //make an async request
       async ()=>{
@@ -28,6 +29,9 @@ class IndexContainer extends Component {
         let data = await response.json();
         //
         this.setState({[name]: data.results});
+        if(cb) {
+          cb()
+        }
       }
     )();
   }
